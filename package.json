@@ -1,0 +1,26 @@
+{
+  "name": "Google-Book-Search",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vincent-Diaz/Google-Book-Search.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vincent-Diaz/Google-Book-Search/issues"
+  },
+  "homepage": "https://github.com/Vincent-Diaz/Google-Book-Search#readme",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.0"
+  }
+}

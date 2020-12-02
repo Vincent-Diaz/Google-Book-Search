@@ -20,7 +20,9 @@
   "homepage": "https://github.com/Vincent-Diaz/Google-Book-Search#readme",
   "dependencies": {
     "axios": "^0.21.0",
+    "bootstrap": "^4.5.3",
     "express": "^4.17.1",
-    "mongoose": "^5.11.0"
+    "mongoose": "^5.11.0",
+    "react-bootstrap": "^1.4.0"
   }
 }

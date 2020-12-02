@@ -1,9 +1,10 @@
 import axios from "axios";
+const API_KEY = "AIzaSyCn12aJXrp9AT0fIjfUnfOiOQMBtKATaO4";
 
 export default {
   // Gets all books
   getBooks: function(query) {
-    return axios.get(`https://www.googleapis.com/books/v1/volumes?q=${query}`);
+    return axios.get(`https://www.googleapis.com/books/v1/volumes?q=${query}&key=${API_KEY}`);
   },
   // Gets the book with the given id
   savedBooks: function() {

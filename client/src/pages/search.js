@@ -7,7 +7,8 @@ class Search extends Component {
         value: "",
         books: [],
         savedBook: [],
-        search: ""
+        search: "",
+        message: ""
     };
 
     componentDidMount() {
@@ -50,7 +51,7 @@ class Search extends Component {
         .then(() => {
             const savedBook = [...this.state.savedBook, id];
             console.log(savedBook)
-            this.setState({ savedBook });
+            this.setState({ savedBook, message: alert("Book Saved!") });
         })
         .catch(err => console.log(err))
     }

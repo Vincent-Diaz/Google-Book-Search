@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import API from "../utils/API";
 
+
 class Saved extends Component {
     state = {
         savedBooks: []
@@ -18,10 +19,9 @@ class Saved extends Component {
 
     loadBooks = () => {
         API.savedBooks()
-            .then(({ data: savedBooks }) => {
-                this.setState({ savedBooks });
-            })
+            .then(res => this.setState({ savedBooks: res })) 
             .catch(err => console.log(err));
+            console.log("savedBooks")
     }
 
     render() {

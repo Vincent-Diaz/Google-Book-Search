@@ -44,10 +44,12 @@ class Search extends Component {
     }
 
     handleSaveBook = id => {
+        console.log("saved")
         const saved = this.state.books.find(books => books.id === id);
         API.saveBook(saved)
         .then(() => {
             const savedBook = [...this.state.savedBook, id];
+            console.log(savedBook)
             this.setState({ savedBook });
         })
         .catch(err => console.log(err))

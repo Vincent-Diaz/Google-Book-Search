@@ -11,9 +11,9 @@ class Saved extends Component {
         this.loadBooks();
     }
 
-    deleteBook = id => {
+    handleDeleteBook = id => {
         API.deleteBook(id)
-            .then(res => this.loadbooks())
+            .then(res => this.componentDidMount())
             .catch(err => console.log(err));
     }
 
@@ -43,7 +43,7 @@ class Saved extends Component {
                                                 <p className="card-text">{result.description}</p>
                                                 <div>
                                                     <a href={result.link} className="btn btn-outline-dark mt-3" target="_blank" rel="noreferrer" >View</a>
-                                                    <button onClick={() => this.deleteBook(result._id)} className="btn btn-outline-primary mt-3 ml-3" >
+                                                    <button onClick={() => this.handleDeleteBook(result._id)} className="btn btn-outline-primary mt-3 ml-3" >
                                                         Remove
                                                     </button>
                                                 </div>
